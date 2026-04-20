@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Television Catalog - Shop TVs</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h2>📺 Television Section</h2>
+        <p>Discover the best TVs with stunning visuals and smart features</p>
+        <div class="auth-buttons">
+            <a href="../index.html" class="auth-btn login-btn">Home</a>
+            <a href="../cart.php" class="auth-btn register-btn">View Cart</a>
+        </div>
+    </header>
+
+    <div class="search" style="justify-content: center;">
+        <select id="sortPrice" style="padding: 15px 20px; border: 2px solid rgba(255,255,255,0.2); border-radius: 30px; background: rgba(255,255,255,0.1); color: #2c3e50; font-size: 16px; backdrop-filter: blur(10px);">
+            <option value="default">Default Order</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+        </select>
+    </div>
+
+    <div class="products-container" id="productsContainer">
+        <!-- Product 1 -->
+        <figure class="product product-card" data-price="29999">
+            <div class="product-image">
+                <img src="https://tse4.mm.bing.net/th/id/OIP._IXX_01K0nw5Gl1GtwREjAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Samsung TV" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="product-name">Samsung 43" Crystal LED</div>
+            <div class="product-price">₹29,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Samsung 43 Crystal LED">
+                <input type="hidden" name="price" value="29999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <!-- Product 2 -->
+        <figure class="product product-card" data-price="38999">
+            <div class="product-image">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.P28zEvw6aRqfdu_gxZGypAHaFQ?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mi TV" style="width:100%; height:100%; border-radius:50%; object-fit:cover; filter: hue-rotate(30deg);">
+            </div>
+            <div class="product-name">Mi 50" QLED 4K</div>
+            <div class="product-price">₹38,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Mi 50 QLED 4K">
+                <input type="hidden" name="price" value="38999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <!-- Product 3 -->
+        <figure class="product product-card" data-price="45000">
+            <div class="product-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.3wLYKpE8eBjg5UMlqrjszgHaE6?rs=1&pid=ImgDetMain&o=7&rm=3" alt="LG TV" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="product-name">LG 55" Smart OLED</div>
+            <div class="product-price">₹45,000</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="LG 55 Smart OLED">
+                <input type="hidden" name="price" value="45000">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <!-- Product 4 -->
+        <figure class="product product-card" data-price="52999">
+            <div class="product-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.Me-wiua8XNUKQnJYKCMciQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="OnePlus TV" style="width:100%; height:100%; border-radius:50%; object-fit:cover; filter: hue-rotate(60deg);">
+            </div>
+            <div class="product-name">OnePlus 55" LED</div>
+            <div class="product-price">₹52,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="OnePlus 55 LED">
+                <input type="hidden" name="price" value="52999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <!-- Product 5 -->
+        <figure class="product product-card" data-price="75000">
+            <div class="product-image">
+                <img src="https://i5.walmartimages.com/seo/Sony-65-Class-BRAVIA-3-LED-4K-HDR-Smart-Google-TV-K-65S30-2024-Model_29b0b6bf-a100-438e-97b3-a3272c7b065f.b23e51b88dd3fd5770145791c2bd83cb.jpeg" alt="Sony TV" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="product-name">Sony 65" 4K Bravia</div>
+            <div class="product-price">₹75,000</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Sony 65 4K Bravia">
+                <input type="hidden" name="price" value="75000">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <!-- Product 6 -->
+        <figure class="product product-card" data-price="105000">
+            <div class="product-image">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.gQPSP7b1kJ1pvSPGmVGqGwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="TCL TV" style="width:100%; height:100%; border-radius:50%; object-fit:cover; filter: sepia(0.3);">
+            </div>
+            <div class="product-name">TCL 75" Premium OLED</div>
+            <div class="product-price">₹1,05,000</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="TCL 75 Premium OLED">
+                <input type="hidden" name="price" value="105000">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortSelect = document.getElementById('sortPrice');
+            const container = document.getElementById('productsContainer');
+            const products = Array.from(container.querySelectorAll('.product'));
+
+            sortSelect.addEventListener('change', function() {
+                const sortValue = this.value;
+                const sortedProducts = [...products].sort((a, b) => {
+                    const priceA = parseInt(a.dataset.price);
+                    const priceB = parseInt(b.dataset.price);
+                    if (sortValue === 'low-high') {
+                        return priceA - priceB;
+                    } else if (sortValue === 'high-low') {
+                        return priceB - priceA;
+                    } else {
+                        return products.indexOf(a) - products.indexOf(b);
+                    }
+                });
+
+                container.innerHTML = '';
+                sortedProducts.forEach(product => container.appendChild(product));
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2026 DebugDuo. All rights reserved.</p>
+    </footer>
+</body>
+</html>

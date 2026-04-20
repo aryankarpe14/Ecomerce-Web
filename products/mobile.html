@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Catalog - Shop Smartphones</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h2>📱 Mobile Catalog</h2>
+        <p>Latest smartphones with cutting-edge features</p>
+        <div class="auth-buttons">
+            <a href="../index.html" class="auth-btn login-btn">Home</a>
+            <a href="../cart.php" class="auth-btn register-btn">View Cart</a>
+        </div>
+    </header>
+
+    <div class="search" style="justify-content: center;">
+        <select id="sortPrice" style="padding: 15px 20px; border: 2px solid rgba(255,255,255,0.2); border-radius: 30px; background: rgba(255,255,255,0.1); color: #2c3e50; font-size: 16px; backdrop-filter: blur(10px);">
+            <option value="default">Default Order</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+        </select>
+    </div>
+
+    <div class="products-container" id="productsContainer">
+        <figure class="product product-card" data-price="12999">
+            <div class="product-image">
+                <img src="https://cdn1.productnation.co/stg/sites/4/63213245e43e8.jpeg" alt="Realme Mobile" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="product-name">Realme Narzo 50</div>
+            <div class="product-price">₹12,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Realme Narzo 50">
+                <input type="hidden" name="price" value="12999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <figure class="product product-card" data-price="17999">
+            <div class="product-image">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.NbG5uztU_31mRYl8BQtkxQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Samsung Mobile" style="width:100%; height:100%; border-radius:50%; object-fit:cover; filter: hue-rotate(300deg);">
+            </div>
+            <div class="product-name">Samsung Galaxy A14</div>
+            <div class="product-price">₹17,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Samsung Galaxy A14">
+                <input type="hidden" name="price" value="17999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <figure class="product product-card" data-price="24999">
+            <div class="product-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.N64fww22yDclpdZYCXs1TwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="OnePlus Mobile" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="product-name">OnePlus Nord CE 3</div>
+            <div class="product-price">₹24,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="OnePlus Nord CE 3">
+                <input type="hidden" name="price" value="24999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <figure class="product product-card" data-price="32999">
+            <div class="product-image">
+                <img src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/pixel7athree.jpg" alt="Google Pixel" style="width:100%; height:100%; border-radius:50%; object-fit:cover; filter: sepia(0.2);">
+            </div>
+            <div class="product-name">Google Pixel 7a</div>
+            <div class="product-price">₹32,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Google Pixel 7a">
+                <input type="hidden" name="price" value="32999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <figure class="product product-card" data-price="44999">
+            <div class="product-image">
+                <img src="https://www.apple.com/newsroom/images/product/iphone/geo/Apple_iphone13_colors_geo_09142021_big.jpg.large_2x.jpg" alt="iPhone" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="product-name">Apple iPhone 13 Mini</div>
+            <div class="product-price">₹44,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Apple iPhone 13 Mini">
+                <input type="hidden" name="price" value="44999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <figure class="product product-card" data-price="69999">
+            <div class="product-image">
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.ZbhQLxuP_H--92pukIQVrAHaEM?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Samsung Flagship" style="width:100%; height:100%; border-radius:50%; object-fit:cover; filter: hue-rotate(60deg);">
+            </div>
+            <div class="product-name">Samsung Galaxy S23</div>
+            <div class="product-price">₹69,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Samsung Galaxy S23">
+                <input type="hidden" name="price" value="69999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortSelect = document.getElementById('sortPrice');
+            const container = document.getElementById('productsContainer');
+            const products = Array.from(container.querySelectorAll('.product'));
+
+            sortSelect.addEventListener('change', function() {
+                const sortValue = this.value;
+                const sortedProducts = [...products].sort((a, b) => {
+                    const priceA = parseInt(a.dataset.price);
+                    const priceB = parseInt(b.dataset.price);
+                    if (sortValue === 'low-high') {
+                        return priceA - priceB;
+                    } else if (sortValue === 'high-low') {
+                        return priceB - priceA;
+                    } else {
+                        return products.indexOf(a) - products.indexOf(b);
+                    }
+                });
+
+                container.innerHTML = '';
+                sortedProducts.forEach(product => container.appendChild(product));
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2026 DebugDuo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

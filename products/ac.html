@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Catalog - Shop Air Conditioners</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h2>❄️ Air Conditioner Catalog</h2>
+        <p>Stay cool with energy efficient ACs</p>
+        <div class="auth-buttons">
+            <a href="../index.html" class="auth-btn login-btn">Home</a>
+            <a href="../cart.php" class="auth-btn register-btn">View Cart</a>
+        </div>
+    </header>
+
+    <div class="search" style="justify-content: center;">
+        <select id="sortPrice" style="padding: 15px 20px; border: 2px solid rgba(255,255,255,0.2); border-radius: 30px; background: rgba(255,255,255,0.1); color: #2c3e50; font-size: 16px; backdrop-filter: blur(10px);">
+            <option value="default">Default Order</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+        </select>
+    </div>
+
+    <div class="products-container" id="productsContainer">
+      
+        <figure class="product product-card" data-price="24999">
+            <div class="product-image">
+                <img src="https://tse1.mm.bing.net/th/id/OIP._LUZ3coaEDJGWMvP562tsAHaDh?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Voltas AC" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="product-name">Voltas 1 Ton 3 Star</div>
+            <div class="product-price">₹24,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Voltas 1 Ton 3 Star">
+                <input type="hidden" name="price" value="24999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        
+        <figure class="product product-card" data-price="28999">
+            <div class="product-image">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.yynQfr-N4n-dWQr_Ksv5RAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="BlueStar AC" style="width:100%; height:100%; border-radius:50%; object-fit:cover; filter: hue-rotate(180deg);">
+            </div>
+            <div class="product-name">BlueStar 1 Ton 5 Star</div>
+            <div class="product-price">₹28,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="BlueStar 1 Ton 5 Star">
+                <input type="hidden" name="price" value="28999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <figure class="product product-card" data-price="32999">
+            <div class="product-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.usHXuVEWDfYhX237bgQX8AHaE6?rs=1&pid=ImgDetMain&o=7&rm=3" alt="LG AC" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="product-name">LG 1.5 Ton Inverter</div>
+            <div class="product-price">₹32,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="LG 1.5 Ton Inverter">
+                <input type="hidden" name="price" value="32999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <figure class="product product-card" data-price="39999">
+            <div class="product-image">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/7/438623996/ZK/BQ/HO/215549594/carrier-1-5-ton-split-ac-1000x1000.jpg" alt="Carrier AC" style="width:100%; height:100%; border-radius:50%; object-fit:cover; filter: sepia(0.3);">
+            </div>
+            <div class="product-name">Carrier 1.5 Ton Split</div>
+            <div class="product-price">₹39,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Carrier 1.5 Ton Split">
+                <input type="hidden" name="price" value="39999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <figure class="product product-card" data-price="48999">
+            <div class="product-image">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.YiYkL_H_abdfH7hISvgzvwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Daikin AC" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="product-name">Daikin 2 Ton Premium</div>
+            <div class="product-price">₹48,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Daikin 2 Ton Premium">
+                <input type="hidden" name="price" value="48999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+
+        <figure class="product product-card" data-price="55999">
+            <div class="product-image">
+                <img src="https://static1.industrybuying.com/products/electrical/air-conditioner/split-ac/ELE.SPL.825891183_1708578007742.webp" alt="Hitachi AC" style="width:100%; height:100%; border-radius:50%; object-fit:cover; filter: hue-rotate(90deg);">
+            </div>
+            <div class="product-name">Hitachi 2 Ton 3 Star</div>
+            <div class="product-price">₹55,999</div>
+            <form action="../add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Hitachi 2 Ton 3 Star">
+                <input type="hidden" name="price" value="55999">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </figure>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortSelect = document.getElementById('sortPrice');
+            const container = document.getElementById('productsContainer');
+            const products = Array.from(container.querySelectorAll('.product'));
+
+            sortSelect.addEventListener('change', function() {
+                const sortValue = this.value;
+                const sortedProducts = [...products].sort((a, b) => {
+                    const priceA = parseInt(a.dataset.price);
+                    const priceB = parseInt(b.dataset.price);
+                    if (sortValue === 'low-high') {
+                        return priceA - priceB;
+                    } else if (sortValue === 'high-low') {
+                        return priceB - priceA;
+                    } else {
+                        return products.indexOf(a) - products.indexOf(b);
+                    }
+                });
+
+                container.innerHTML = '';
+                sortedProducts.forEach(product => container.appendChild(product));
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2026 DebugDuo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
